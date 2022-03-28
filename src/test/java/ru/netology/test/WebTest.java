@@ -16,7 +16,7 @@ public class WebTest {
     @Test
     void CardDeliveryOrder(){
         Configuration.holdBrowserOpen = true;
-        open("http://localhost:7777/");
+        open("http://localhost:9999/");
         $$x("//input[@type='text']").get(0).val("Тверь");
         $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         $$x("//input[@type='tel']").get(0).val("15.04.2022");
